@@ -1,0 +1,138 @@
+body {
+    background: url('../../static/abstract.svg');
+    background-position: center;
+     background-size: cover;
+     background-attachment: fixed;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    size: 10rem;
+    color: white; 
+    mix-blend-mode: difference; 
+
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 
+                 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+/* Contacts not found */
+.not-found {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    size: 1rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                 0 0 5px rgba(255, 255, 255, 0.9);
+}
+
+/* Contacts */
+.contact-element {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.contact-card {
+    display: flex;
+    background: white;
+    height: 100px;
+    border: 1px solid #000000;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.contact-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    margin-left: 10px;
+}
+
+.contact-info p {
+    margin-left: 10px;
+    color: #444;
+}
+
+/* Add contact button */
+.anchor-div {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact-button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact-button:hover {
+    background-color: rgb(105, 103, 103);
+}
+
+/* Adding contacts */
+.contact-save {
+    display:flex;
+}
+
+.name-input {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 40px;
+    background-color:rgb(230, 227, 227);
+}
+
+.address-input {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 40px;
+    background-color:rgb(230, 227, 227);
+}
+
+.phone-input {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 40px;
+    background-color:rgb(230, 227, 227);
+}
+
+/* Save Button */
+.save-button {
+    color:white;
+    background-color: black;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 0.2s ease-in-out;
+}
+
+.save-button:hover {
+    background-color:  rgb(105, 103, 103);
+}
+
+/* Trash Button */
+.trash-button {
+    align-self: right;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background 0.2s;
+}
+
+.trash-button:hover {
+    background: #fee2e2; /* Light red background on hover */
+}
